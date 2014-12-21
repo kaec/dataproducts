@@ -6,7 +6,7 @@ library(KRLS)
 # the data into training and testing
 data(faithful)
 set.seed(123)
-trainIdx <- createDataPartition(y = faithful$waiting, p = 0.7, list = FALSE)
+trainIdx <- createDataPartition(y = faithful$eruptions, p = 0.7, list = FALSE)
 train <- faithful[trainIdx,]
 test <- faithful[-trainIdx,]
 
